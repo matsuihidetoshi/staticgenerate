@@ -89,7 +89,9 @@
 </template>
 
 <script>
-export default {
+import { Component, Vue } from 'nuxt-property-decorator'
+
+@Component({
   data () {
     return {
       clipped: false,
@@ -102,9 +104,9 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          icon: 'mdi-newspaper',
+          title: 'Articles',
+          to: '/articles'
         }
       ],
       miniVariant: false,
@@ -113,5 +115,7 @@ export default {
       title: 'Vuetify.js'
     }
   }
-}
+})
+
+export default class Dfault extends Vue { }
 </script>
